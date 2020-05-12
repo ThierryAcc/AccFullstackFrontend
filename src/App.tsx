@@ -1,24 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Genres from './Fetchers/Genres';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Genres />
+
+      {/*
+      <Counter name="Erkan" buttonLabel="upvote" />
+      <CounterHook name="Alex Hook" />
+      <CounterHookSpecific name="Dennis" age={24} />
+      <Link name="accenture.com"/> 
+      */}
+
     </div>
   );
 }
