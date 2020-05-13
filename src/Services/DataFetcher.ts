@@ -1,10 +1,11 @@
 import axios from "axios";
 
-
 export default class DataFetcher {
+  getGenres(): any {
+    return axios.get("http://localhost:8080/genres");
+  }
 
-getGenres() {
-    axios.get("http://localhost:8080/genres").then(result => {
-        return result.data;
-    });
-}}
+  getGames(): any {
+    return axios.get("http://localhost:8080/games");
+  }
+}
